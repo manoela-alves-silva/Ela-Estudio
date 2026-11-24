@@ -1,0 +1,62 @@
+[
+  {
+    "id": "funcional",
+    "nome": "Funcional",
+    "descricao": "Força, equilíbrio e resistência com kettlebell, elástico e peso do corpo. Cada exercício tem uma versão mais leve e outra mais puxada.",
+    "etiquetas": [
+      "60 min",
+      "Todos os níveis"
+    ],
+    "foto": "funcional",
+    "alt": "Turma treinando funcional com kettlebells",
+    "duracao": 60
+  },
+  {
+    "id": "jump",
+    "nome": "Jump",
+    "descricao": "Aula no mini trampolim, com música e coreografia simples. Muito cardio e pouco impacto nas articulações.",
+    "etiquetas": [
+      "45 min",
+      "Baixo impacto"
+    ],
+    "foto": "jump",
+    "alt": "Turma na aula de Jump",
+    "duracao": 45
+  },
+  {
+    "id": "hiit",
+    "nome": "HIIT",
+    "descricao": "Treino intervalado curto e intenso: blocos de esforço e pausa que deixam o coração forte em pouco tempo.",
+    "etiquetas": [
+      "30 min",
+      "Intenso"
+    ],
+    "foto": "hiit",
+    "alt": "Aluno fazendo exercício com corda naval",
+    "duracao": 30
+  },
+  {
+    "id": "mobilidade",
+    "nome": "Mobilidade e alongamento",
+    "descricao": "Movimentos lentos para soltar quadril, coluna e ombros. Bom para quem trabalha sentado e para recuperar dos outros treinos.",
+    "etiquetas": [
+      "50 min",
+      "Ritmo tranquilo"
+    ],
+    "foto": "mobilidade",
+    "alt": "Turma alongando em colchonetes",
+    "duracao": 50
+  },
+  {
+    "id": "ar-livre",
+    "nome": "Treino ao ar livre",
+    "descricao": "Uma vez por mês a turma treina no parque e fecha com um café da manhã coletivo. Pode levar alguém junto.",
+    "etiquetas": [
+      "Mensal",
+      "Aberto a convidados"
+    ],
+    "foto": "ar-livre",
+    "alt": "Treino em grupo no parque",
+    "temHorario": false
+  }
+]

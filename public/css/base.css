@@ -1,0 +1,139 @@
+/* Base: reset, fundo, tipografia e componentes reutilizáveis (botões, vidro, fotos, objetos 3D). */
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  color: var(--tinta);
+  font-family: var(--fonte);
+  font-size: 1rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background: var(--fundo); /* liso: as manchas de cor ficam só no topo (.hero) */
+}
+/* Grão sutil: tira o ar de "digital liso" */
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none; opacity: .22; mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.45'/%3E%3C/svg%3E");
+}
+[hidden] { display: none !important; } /* vence o display dos botões (.btn) */
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+p { margin: 0; }
+
+h1, h2, h3 { font-family: var(--fonte); font-weight: 800; letter-spacing: -.045em; line-height: .95; margin: 0; text-wrap: balance; }
+h2 { font-size: clamp(2.3rem, 5.4vw, 4rem); margin-top: 12px; }
+h3 { font-size: 1.45rem; font-weight: 700; letter-spacing: -.03em; line-height: 1.1; }
+/* Palavra do título dentro de uma pílula branca */
+.pilula { display: inline-block; background: var(--vidro-forte); border-radius: 99px; padding: 0 .28em .04em; box-shadow: var(--sombra); }
+
+:focus-visible { outline: 0; box-shadow: var(--anel-foco) !important; border-radius: 12px; }
+
+/* Layout */
+.wrap {
+  max-width: var(--largura-max);
+  margin: 0 auto;
+  padding-left: max(18px, env(safe-area-inset-left, 0px));
+  padding-right: max(18px, env(safe-area-inset-right, 0px));
+}
+.secao { padding-block: var(--espaco-secao); position: relative; }
+.secao--sem-topo { padding-top: 0; }
+.secao__lead { color: var(--suave); font-size: 1.08rem; max-width: 52ch; margin-top: 16px; }
+
+/* Rótulo acima dos títulos: pílula pequena */
+.rotulo {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: .8rem; font-weight: 600; letter-spacing: .02em;
+  color: var(--tinta);
+  background: var(--vidro); border: 1px solid var(--vidro-borda);
+  padding: 5px 12px; border-radius: 99px;
+}
+.rotulo::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--salvia-escura); }
+
+/* Vidro fosco (cartões) */
+.vidro, .cartao-vidro {
+  background: var(--vidro);
+  border: 1px solid var(--vidro-borda);
+  backdrop-filter: blur(14px) saturate(1.2);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2);
+  box-shadow: var(--sombra);
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .vidro, .cartao-vidro { background: rgba(255, 255, 255, .82); }
+}
+
+/* Cartões sólidos (fora do topo): branco com borda fina */
+.cartao, .modalidade, .destaque, .depoimento, .plano, .faq details {
+  background: var(--cartao);
+  border: 1px solid var(--cartao-borda);
+}
+
+/* Seções em bloco: cada parte da página tem cor própria e cantos arredondados */
+.painel { margin-inline: clamp(8px, 1.6vw, 20px); border-radius: clamp(28px, 4vw, 48px); }
+.painel--claro { background: var(--painel-claro); }
+.painel--salvia { background: var(--painel-salvia); }
+.painel--argila { background: var(--painel-argila); }
+
+/* Botões em pílula. Neon só ao passar o mouse, focar ou tocar. */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  font: 600 1rem/1 var(--fonte);
+  padding: 16px 24px; border-radius: 99px;
+  border: 1.5px solid transparent;
+  text-decoration: none; cursor: pointer;
+  transition: background-color .25s, color .25s, box-shadow .25s, transform .2s;
+}
+.btn--pequeno { padding: 11px 18px; font-size: .92rem; }
+.btn--primario, .btn--escuro { background: var(--tinta); color: var(--claro); }
+.btn--contorno { background: var(--vidro); border-color: var(--vidro-borda); color: var(--tinta); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+.btn--linha { border-color: currentColor; color: inherit; background: transparent; }
+.btn:active { transform: scale(.97); background: var(--neon); color: var(--tinta); box-shadow: 0 0 26px var(--neon-brilho); }
+@media (hover: hover) {
+  .btn:hover { background: var(--neon); color: var(--tinta); border-color: var(--neon); box-shadow: 0 0 26px var(--neon-brilho); }
+}
+.btn:focus-visible { background: var(--neon); color: var(--tinta); }
+button { -webkit-tap-highlight-color: transparent; }
+
+/* Link para pular o menu (aparece só ao navegar pelo teclado) */
+.pular { position: absolute; left: 16px; top: -60px; z-index: 50; background: var(--tinta); color: var(--claro); padding: 10px 16px; border-radius: 99px; font-weight: 600; }
+.pular:focus { top: 12px; }
+#conteudo { scroll-margin-top: 90px; }
+section[id] { scroll-margin-top: 84px; }
+
+/* Link com seta */
+.link-seta { font-weight: 600; text-decoration: none; display: inline-flex; gap: 6px; align-items: center; justify-self: start; border-bottom: 1.5px solid currentColor; padding-bottom: 1px; transition: color .2s, text-shadow .2s; }
+.link-seta::after { content: "→"; transition: transform .2s; }
+@media (hover: hover) { .link-seta:hover::after { transform: translateX(4px); } }
+
+/* Entrada ao rolar (só com JS ativo; sem JS tudo aparece normal) */
+.com-js [data-revelar] { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s cubic-bezier(.2, .8, .2, 1); }
+.com-js [data-revelar].visivel { opacity: 1; transform: none; }
+
+/* Enquanto os dados chegam: bloco pulsando no lugar do conteúdo */
+.carregando:empty { min-height: 260px; border-radius: var(--raio); background: linear-gradient(100deg, rgba(255,255,255,.25) 30%, rgba(255,255,255,.6) 50%, rgba(255,255,255,.25) 70%) 0 0 / 300% 100%; animation: carregar 1.4s linear infinite; }
+@keyframes carregar { to { background-position: -150% 0; } }
+.erro { padding: 18px; border-radius: var(--raio); border: 1px dashed currentColor; }
+
+/* Fotos: <picture> responsivo gerado pelo js/imagens.js.
+   Enquanto a foto real não existe, aparece um espaço reservado em sálvia. */
+.foto { position: relative; overflow: hidden; border-radius: var(--raio); background: linear-gradient(160deg, var(--salvia), var(--salvia-escura)); }
+.foto img { width: 100%; height: 100%; object-fit: cover; transition: opacity .5s, transform .8s cubic-bezier(.2, .8, .2, 1); }
+.foto:not(.foto--pronta) img { opacity: 0; }
+.foto--vazia { display: flex; align-items: flex-end; justify-content: center; padding: 14px; }
+.foto--vazia span { font-size: .72rem; font-weight: 600; color: var(--tinta); background: var(--vidro-forte); padding: 4px 10px; border-radius: 99px; text-align: center; }
+
+/* Objetos 3D (js/objetos3d.js): imagem com fundo transparente ou desenho em CSS */
+.obj3d { position: absolute; z-index: 2; pointer-events: none; display: block; animation: flutuar 6s ease-in-out infinite; }
+.obj3d img { width: 100%; height: auto; filter: drop-shadow(0 18px 22px rgba(31, 38, 34, .18)); }
+.obj3d--lento { animation-duration: 8s; animation-direction: reverse; }
+@keyframes flutuar { 50% { transform: translateY(-12px) rotate(3deg); } }
+/* Desenho em CSS enquanto a imagem 3D não existe (fosco, nas cores da paleta) */
+.obj3d--css { aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 32% 28%, #F4EEE6, var(--argila) 45%, var(--argila-escura)); box-shadow: 0 18px 28px -10px rgba(0, 0, 0, .25); }
+.obj3d--css[data-obj="kettlebell"] { border-radius: 0; background: none; box-shadow: none; aspect-ratio: 7 / 8; }
+.obj3d--css[data-obj="kettlebell"]::before { content: ""; position: absolute; left: 21%; top: 0; width: 58%; height: 43%; border: clamp(6px, 1.4vw, 10px) solid var(--salvia-escura); border-bottom: 0; border-radius: 999px 999px 0 0; }
+.obj3d--css[data-obj="kettlebell"]::after { content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 70%; border-radius: 50%; background: radial-gradient(circle at 32% 28%, #F4EEE6, var(--salvia) 45%, var(--salvia-escura)); box-shadow: 0 16px 24px -10px rgba(0, 0, 0, .25); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  html { scroll-behavior: auto; }
+}

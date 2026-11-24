@@ -1,0 +1,48 @@
+{
+  "fotos": [
+    {
+      "foto": "funcional",
+      "alt": "Área de treino com piso de madeira e kettlebells",
+      "legenda": "Sala principal",
+      "grande": true
+    },
+    {
+      "foto": "jump",
+      "alt": "Mini trampolins enfileirados",
+      "legenda": "Jump"
+    },
+    {
+      "foto": "espaco-equipamentos",
+      "alt": "Kettlebells, cordas e colchonetes organizados na estante",
+      "legenda": "Equipamentos"
+    },
+    {
+      "foto": "mobilidade",
+      "alt": "Colchonetes perto da janela com luz natural",
+      "legenda": "Canto da mobilidade"
+    },
+    {
+      "foto": "espaco-entrada",
+      "alt": "Recepção do estúdio com plantas",
+      "legenda": "Entrada"
+    }
+  ],
+  "destaques": [
+    {
+      "titulo": "No máximo 10 por turma",
+      "texto": "Dá para corrigir cada movimento e lembrar do nome de todo mundo."
+    },
+    {
+      "titulo": "Equipamento para cada um",
+      "texto": "Kettlebell, elástico, colchonete e trampolim por pessoa. Ninguém fica na fila."
+    },
+    {
+      "titulo": "Luz natural",
+      "texto": "Janelas grandes e plantas. O espaço parece mais uma casa do que uma academia."
+    },
+    {
+      "titulo": "Treino fora das paredes",
+      "texto": "Uma vez por mês a turma treina no parque e fecha com café da manhã."
+    }
+  ]
+}

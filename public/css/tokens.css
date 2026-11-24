@@ -1,0 +1,51 @@
+/* Tokens de design: cores, fontes e medidas da Elã.
+   Para mudar a identidade visual, mexa só aqui. */
+:root {
+  /* Fundo e manchas de cor (paleta "Sálvia & argila") */
+  --fundo: #EFEBE4;
+  --mancha-salvia: #CBD5C3;
+  --mancha-argila: #E3D3CB;
+  --mancha-areia: #D9D2C4;
+
+  /* Texto */
+  --tinta: #1F2622;               /* quase-preto esverdeado */
+  --suave: #4E5953;               /* secundário (AA sobre fundo e vidro) */
+  --claro: #EFEBE4;               /* texto sobre a tinta */
+  --claro-suave: #B9C2B3;
+
+  /* Cores de apoio */
+  --salvia: #B7C4AE;
+  --salvia-escura: #5F7258;
+  --argila: #D7B8AC;
+  --argila-escura: #A8857A;
+
+  /* Neon: SÓ em hover, foco e toque */
+  --neon: #C8FF4D;
+  --neon-brilho: rgba(200, 255, 77, .85);
+  --anel-neon: 0 0 0 2px var(--neon), 0 0 28px var(--neon-brilho);
+  --anel-foco: 0 0 0 2px var(--tinta), 0 0 0 5px var(--neon), 0 0 24px var(--neon-brilho); /* foco: contorno escuro garante contraste */
+
+  /* Blocos de seção e cartões sólidos */
+  --painel-claro: #F8F6F1;
+  --painel-salvia: #D3DCCB;
+  --painel-argila: #EBDCD4;
+  --cartao: #FFFFFF;
+  --cartao-borda: rgba(31, 38, 34, .08);
+
+  /* Vidro fosco (só no topo e no menu) */
+  --vidro: rgba(255, 255, 255, .45);
+  --vidro-forte: rgba(255, 255, 255, .7);
+  --vidro-borda: rgba(255, 255, 255, .75);
+  --sombra: 0 14px 30px rgba(31, 38, 34, .07);
+
+  /* Tipografia */
+  --fonte: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Medidas */
+  --raio: 24px;
+  --raio-pequeno: 16px;
+  --largura-max: 1160px;
+  --espaco-secao: clamp(72px, 10vw, 128px);
+
+  color-scheme: light;
+}

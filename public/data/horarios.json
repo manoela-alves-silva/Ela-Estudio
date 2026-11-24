@@ -1,0 +1,130 @@
+{
+  "_aviso": "Horários fictícios.",
+  "seg": [
+    {
+      "hora": "06:30",
+      "modalidade": "funcional",
+      "turma": "Turma da manhã"
+    },
+    {
+      "hora": "07:40",
+      "modalidade": "hiit",
+      "turma": "HIIT antes do trabalho"
+    },
+    {
+      "hora": "12:15",
+      "modalidade": "mobilidade",
+      "turma": "Pausa do almoço"
+    },
+    {
+      "hora": "18:30",
+      "modalidade": "funcional",
+      "turma": "Turma da noite"
+    },
+    {
+      "hora": "19:40",
+      "modalidade": "jump",
+      "turma": "Jump da noite"
+    }
+  ],
+  "ter": [
+    {
+      "hora": "06:30",
+      "modalidade": "jump",
+      "turma": "Jump da manhã"
+    },
+    {
+      "hora": "08:00",
+      "modalidade": "mobilidade",
+      "turma": "Mobilidade da manhã"
+    },
+    {
+      "hora": "18:30",
+      "modalidade": "hiit",
+      "turma": "HIIT da noite"
+    },
+    {
+      "hora": "19:30",
+      "modalidade": "funcional",
+      "turma": "Turma da noite"
+    }
+  ],
+  "qua": [
+    {
+      "hora": "06:30",
+      "modalidade": "funcional",
+      "turma": "Turma da manhã"
+    },
+    {
+      "hora": "07:40",
+      "modalidade": "hiit",
+      "turma": "HIIT antes do trabalho"
+    },
+    {
+      "hora": "12:15",
+      "modalidade": "mobilidade",
+      "turma": "Pausa do almoço"
+    },
+    {
+      "hora": "18:30",
+      "modalidade": "funcional",
+      "turma": "Turma da noite"
+    },
+    {
+      "hora": "19:40",
+      "modalidade": "jump",
+      "turma": "Jump da noite"
+    }
+  ],
+  "qui": [
+    {
+      "hora": "06:30",
+      "modalidade": "jump",
+      "turma": "Jump da manhã"
+    },
+    {
+      "hora": "08:00",
+      "modalidade": "mobilidade",
+      "turma": "Mobilidade da manhã"
+    },
+    {
+      "hora": "18:30",
+      "modalidade": "hiit",
+      "turma": "HIIT da noite"
+    },
+    {
+      "hora": "19:30",
+      "modalidade": "funcional",
+      "turma": "Turma da noite"
+    }
+  ],
+  "sex": [
+    {
+      "hora": "06:30",
+      "modalidade": "funcional",
+      "turma": "Turma da manhã"
+    },
+    {
+      "hora": "12:15",
+      "modalidade": "mobilidade",
+      "turma": "Pausa do almoço"
+    },
+    {
+      "hora": "18:00",
+      "modalidade": "jump",
+      "turma": "Jump de sexta"
+    }
+  ],
+  "sab": [
+    {
+      "hora": "08:30",
+      "modalidade": "funcional",
+      "turma": "Funcional de sábado"
+    },
+    {
+      "hora": "09:40",
+      "modalidade": "mobilidade",
+      "turma": "Alongamento de sábado"
+    }
+  ]
+}

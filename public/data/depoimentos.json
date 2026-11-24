@@ -1,0 +1,28 @@
+[
+  {
+    "texto": "Trabalho sentado o dia todo. Depois de dois meses de mobilidade, a dor nas costas sumiu.",
+    "nome": "Renata",
+    "turma": "Mobilidade e alongamento"
+  },
+  {
+    "texto": "Tenho meia hora no almoço e o HIIT cabe certinho. Volto para o trabalho outra pessoa.",
+    "nome": "Caio",
+    "turma": "HIIT"
+  },
+  {
+    "texto": "Nunca tinha feito exercício. A turma é pequena e ninguém fica olhando torto.",
+    "nome": "Dona Lúcia",
+    "turma": "Funcional",
+    "destaque": "Começou aos 61"
+  },
+  {
+    "texto": "O Jump virou o momento mais divertido da minha semana.",
+    "nome": "Bianca",
+    "turma": "Jump"
+  },
+  {
+    "texto": "Vim num treino no parque com uma amiga e acabei me matriculando.",
+    "nome": "Tiago",
+    "turma": "Treino ao ar livre"
+  }
+]

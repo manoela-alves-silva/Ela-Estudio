@@ -1,0 +1,57 @@
+{
+  "_aviso": "Valores fictícios.",
+  "periodos": [
+    {
+      "id": "mensal",
+      "nome": "Mensal",
+      "desconto": 0,
+      "meses": 1
+    },
+    {
+      "id": "trimestral",
+      "nome": "Trimestral",
+      "desconto": 0.08,
+      "meses": 3
+    },
+    {
+      "id": "semestral",
+      "nome": "Semestral",
+      "desconto": 0.15,
+      "meses": 6
+    }
+  ],
+  "planos": [
+    {
+      "nome": "2x na semana",
+      "precoMensal": 149,
+      "destaque": false,
+      "inclui": [
+        "Qualquer modalidade com horário",
+        "Avaliação no primeiro dia",
+        "Treino ao ar livre mensal"
+      ]
+    },
+    {
+      "nome": "3x na semana",
+      "precoMensal": 189,
+      "destaque": true,
+      "inclui": [
+        "Qualquer modalidade com horário",
+        "Avaliação a cada 3 meses",
+        "Treino ao ar livre mensal",
+        "Pode levar um convidado por mês"
+      ]
+    },
+    {
+      "nome": "Livre",
+      "precoMensal": 229,
+      "destaque": false,
+      "inclui": [
+        "Todas as aulas da semana",
+        "Avaliação a cada 3 meses",
+        "Treino ao ar livre mensal",
+        "Dois convidados por mês"
+      ]
+    }
+  ]
+}

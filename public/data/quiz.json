@@ -1,0 +1,81 @@
+{
+  "perguntas": [
+    {
+      "texto": "O que você mais quer agora?",
+      "opcoes": [
+        {
+          "texto": "Ficar mais forte e disposto",
+          "aponta": "funcional"
+        },
+        {
+          "texto": "Suar e me divertir",
+          "aponta": "jump"
+        },
+        {
+          "texto": "Soltar o corpo e tirar as dores",
+          "aponta": "mobilidade"
+        }
+      ]
+    },
+    {
+      "texto": "Quanto tempo você tem?",
+      "opcoes": [
+        {
+          "texto": "Meia hora, no máximo",
+          "aponta": "hiit"
+        },
+        {
+          "texto": "Uma hora tranquila",
+          "aponta": "funcional"
+        },
+        {
+          "texto": "Depende do dia",
+          "aponta": "ar-livre"
+        }
+      ]
+    },
+    {
+      "texto": "Qual clima combina com você?",
+      "opcoes": [
+        {
+          "texto": "Música alta e energia",
+          "aponta": "jump"
+        },
+        {
+          "texto": "Desafio e superação",
+          "aponta": "hiit"
+        },
+        {
+          "texto": "Calma e respiração",
+          "aponta": "mobilidade"
+        },
+        {
+          "texto": "Ar livre e gente nova",
+          "aponta": "ar-livre"
+        }
+      ]
+    }
+  ],
+  "resultados": {
+    "funcional": {
+      "nome": "Funcional",
+      "descricao": "Treino completo de força e resistência, ajustado ao seu nível. É a base de tudo que acontece no estúdio."
+    },
+    "jump": {
+      "nome": "Jump",
+      "descricao": "Cardio no trampolim com música e coreografia fácil. Pouco impacto, muita energia e um jeito leve de começar."
+    },
+    "hiit": {
+      "nome": "HIIT",
+      "descricao": "Trinta minutos de blocos curtos e intensos. Para quem tem pouco tempo e gosta de sair da aula sem fôlego."
+    },
+    "mobilidade": {
+      "nome": "Mobilidade e alongamento",
+      "descricao": "Movimento lento e consciente para soltar o corpo. Combina com qualquer outra modalidade."
+    },
+    "ar-livre": {
+      "nome": "Treino ao ar livre",
+      "descricao": "O encontro mensal no parque, com café da manhã no fim. Uma boa porta de entrada para conhecer a turma."
+    }
+  }
+}

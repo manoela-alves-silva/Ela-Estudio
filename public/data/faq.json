@@ -1,0 +1,28 @@
+{
+  "perguntas": [
+    {
+      "pergunta": "Nunca treinei. Consigo acompanhar?",
+      "resposta": "Consegue. Todo exercício tem uma versão mais leve, e a Helena ajusta o treino na hora. Muita gente começou do zero aqui."
+    },
+    {
+      "pergunta": "Como funciona a aula experimental?",
+      "resposta": "Você escolhe o dia e o horário, manda uma mensagem e participa de uma aula normal com a turma. Não paga nada."
+    },
+    {
+      "pergunta": "Posso misturar modalidades?",
+      "resposta": "Pode. Os planos valem para qualquer aula com horário fixo. Muita gente faz funcional durante a semana e mobilidade no sábado."
+    },
+    {
+      "pergunta": "O que eu levo?",
+      "resposta": "Roupa confortável, tênis e uma garrafinha de água. Colchonete, pesos e trampolim são do estúdio."
+    },
+    {
+      "pergunta": "Tem fidelidade?",
+      "resposta": "O plano mensal não tem. O trimestral e o semestral têm desconto porque são pagos pelo período inteiro."
+    },
+    {
+      "pergunta": "E se eu faltar?",
+      "resposta": "Avise pelo WhatsApp e remarque em outra turma da mesma semana, se tiver vaga."
+    }
+  ]
+}
