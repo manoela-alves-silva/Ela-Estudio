@@ -6,6 +6,9 @@ Catálogo de uma página para um estúdio de movimento de bairro (funcional, Jum
 
 Feito com **HTML, CSS e JavaScript puros**, sem framework.
 
+🔗 **Veja no ar:** [manoela-alves-silva.github.io/Ela-Estudio](https://manoela-alves-silva.github.io/Ela-Estudio/)
+· 💼 **Contato:** [LinkedIn: Manoela Silva](https://www.linkedin.com/in/manoela-silva-592641221/)
+
 ![Visão geral: topo com foto em cápsula e objetos 3D, o espaço, modalidades, horários, quiz e planos](docs/gifs/visao-geral.gif)
 
 ---
